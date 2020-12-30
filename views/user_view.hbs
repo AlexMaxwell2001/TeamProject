@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>User Page</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/user.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="border">
+    <div id="contin"><img id="header1" src=""></div>
+    <div class="input-group mb-3">
+        <input class="py-2 border-left-0 border" id="Search" type="search"  onkeyup="filterFunction()"  placeholder="Find The Products Your Looking for...">
+        <div class="input-group-append">
+            <button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="dropdown" id="dissapear">
+            <div id="myDropdown" data-onshow="" class="dropdown-content">
+              <a onclick="findSpecific(this)">Bags</a>
+              <a onclick="findSpecific(this)">Tops</a>
+              <a onclick="findSpecific(this)">Hoodies</a>
+              <a onclick="findSpecific(this)">Jeans</a>
+              <a onclick="findSpecific(this)">T-shirts</a>
+              <a onclick="findSpecific(this)">Shoes</a>
+              <a onclick="findSpecific(this)">Coats</a>
+              <a onclick="findSpecific(this)">Skirts</a>
+              <a onclick="findSpecific(this)">Tailored Belted Coat</a>
+              <a onclick="findSpecific(this)">Longline Zip UP Hoodie in black</a>
+              <a onclick="findSpecific(this)">High Waisted Denim Mom Jeans</a>
+              <a onclick="findSpecific(this)">Boat shoes in Black suede with white soles</a>
+              <a onclick="findSpecific(this)">Vintage High Waisted Culotte Skirt Floral</a>
+              <a onclick="findSpecific(this)">Elongated 90s Shoulder Bag in Renaissance Print</a>
+              <a onclick="findSpecific(this)">Athleisure Tee Curved logo t-shirt in navy</a>
+              <a onclick="findSpecific(this)">Reclaimed Vintage inspired unisex relaxed fit jeans in black</a>
+              <a onclick="findSpecific(this)">Spray on jeans with power stretch in light wash blue</a>
+              <a onclick="findSpecific(this)">Bershka super skinny acid wash jeans in blue</a>
+              <a onclick="findSpecific(this)">Le Breve lounge printed long sleeve t-shirt in black</a>
+              <a onclick="findSpecific(this)">Daisy Street relaxed t-shirt with sport print</a>
+              <a onclick="findSpecific(this)">Champion crew neck t-shirt in off white</a>
+              <a onclick="findSpecific(this)">QED London formal coat in grey</a>
+              <a onclick="findSpecific(this)">Tom Tailor wool coat in beige check</a>
+              <a onclick="findSpecific(this)">Forever New hooded faux fur coat in oatmeal</a>
+              <a onclick="findSpecific(this)">New Look rib roll neck top in camel</a>
+              <a onclick="findSpecific(this)">Slim fit long sleeve top with lettuce edge in black</a>
+              <a onclick="findSpecific(this)">Monki Samina ribbed long sleeve top in cream</a>
+              <a onclick="findSpecific(this)">Hollister henley long sleeve top in white</a>
+              <a onclick="findSpecific(this)">Truffle Collection Stiletto Heeled shoe with chunky chain detail</a>
+              <a onclick="findSpecific(this)">Lace up shoes in black patent faux leather</a>
+              <a onclick="findSpecific(this)">Steady block heel mid shoes in black</a>
+              <a onclick="findSpecific(this)">Who What Wear Balia cross body bag with chain strap in black</a>
+              <a onclick="findSpecific(this)">Revolution X Friends Cosmetic Bag</a>
+              <a onclick="findSpecific(this)">Nike Training sports bag in black</a>
+              <a onclick="findSpecific(this)">Pleat leather look mini skirt in black</a>
+              <a onclick="findSpecific(this)">Mini skirt with ruched detail in mustard and black print</a>
+              <a onclick="findSpecific(this)">Jersey pencil midi skirt in black</a>
+              <a onclick="findSpecific(this)">Adidas Originals essentials hoodie in white</a>
+              <a onclick="findSpecific(this)">New Look hoodie with NY print in boucle</a>
+              <a onclick="findSpecific(this)">NBA Chicago Bulls Gametime hoodie in reverse french terry</a>
+            </div>
+          </div>
+    </div>
+    <button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></button>
+    <button id="logout" class="btn btn-primary">Log out</button>
+    <button id="contactus" class="btn btn-primary">Contact Us</button>
+    <button id="checkout" class="btn btn-primary"><i class="fa fa-shopping-basket" style="font-size:24px;color:white"></i></button>
+    <button id="settings" class="btn btn-primary"><i class="fa fa-cog" style="font-size: 24px;color: white"></i></button>
+</div>
+
+<div class="modal fade" id="errorAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="alert alert-danger" role="alert">
+            <strong>Oh No!</strong> Username and password are Fraudulent!
+        </div>
+    </div>
+</div>
+<div class="container">
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">User Info</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">Orders</a>
+        </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+            <h3>User Info</h3>
+            {{# each Data}}
+                <div id="border2">
+                    <form id="addForm" action="/Update/{{Username}}" method="PUT">
+                        <br><br>
+                        <label class="labels">First Name</label>
+                        <div class="form-group">
+                            <input type="text" value="{{FirstNames}}" name="FirstNames" class="form-control" placeholder="First Name(s)" required>
+                        </div>
+                        <br><br>
+                        <label class="labels">Surname</label>
+                        <div class="form-group">
+                            <input type="text" value="{{Surname}}" name="Surname" class="form-control" placeholder="Surname" required>
+                        </div>
+                        <br><br>
+                        <label class="labels">Mobile Number</label>
+                        <div class="form-group">
+                            <input type="text" value="{{Mobile}}" name="Mobile" class="form-control" placeholder="Mobile Phone" required>
+                        </div>
+                        <br><br>
+                        <label class="labels">Email Adress</label>
+                        <div class="form-group">
+                            <input type="text" value="{{Email}}" name="Email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <br><br>
+                        <label class="labels">Date of Birth</label>
+                        <div class="form-group">
+                            <input type="text" name="DOB" value="{{DOB}}" class="form-control" placeholder="Date Of Birth e.g.(22/02/2002)" required>
+                        </div>
+                        <br><br>
+                        <label class="labels">Address Line 1</label>
+                        <div class="form-group">
+                            <input type="text" name="AddressLine1" value="{{AddressHome.AddressLine1}}" class="form-control" placeholder="Address Line 1" required>
+                        </div>
+                        <br><br>
+                        <label class="labels">Address Line 2</label>
+                        <div class="form-group">
+                            <input type="text" name="AddressLine2" value="{{AddressHome.AddressLine2}}" class="form-control" placeholder="Address Line 2" >
+                        </div>
+                        <br><br>
+                        <label class="labels">Town</label>
+                        <div class="form-group">
+                            <input type="text" name="Town" value="{{AddressHome.Town}}" class="form-control" placeholder="Town" required>
+                        </div>
+                        <br><br>
+                        <label class="labels">County</label>
+                        <div class="form-group">
+                            <input type="text" name="countyORcity" value="{{AddressHome.countyORcity}}" class="form-control" placeholder="city/county" required>
+                        </div>
+                        <br><br>
+                        <label class="labels">Eircode</label>
+                        <div class="form-group">
+                            <input type="text" name="EIRCODE" value="{{AddressHome.EIRCODE}}" class="form-control" placeholder="EIRCODE" >
+                        </div>
+                        <br>
+                        <button id="Join" type="submit" class="btn btn-success">Update Details</button>
+                    </form>
+                    <a href="/Reset"><button id="resetlink" class="btn btn-primary">Reset Password</button></a>
+                </div>
+            {{/each}}
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+            <h3>Orders</h3>
+            {{# if Orders}}
+            <div id="accordion">
+                {{#each Orders}}
+                <div class="card" onclick="changeClass()">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <h5 class="panel-title" data-toggle="collapse" data-target="#collapse{{this.cartNumber}}" aria-expanded="true" aria-controls="collapseOne">
+                                <span style="text-align: left;">
+                                    Order status: {{this.orderstatus}}
+                                </span>
+
+                                <span style="margin-left: 210px; margin-top:-10px;width: 10%">
+                                    {{this.date}}
+                                </span>
+                                <span style="float: left; width: 38%;">
+                                    Order #{{this.cartNumber}}
+                                </span>
+                                <i style="float:right;margin-left:50px;visibility:visible;" id="iconChange" class="fa fa-caret-up" aria-hidden="true"></i>
+                            </h5>
+                        </h5>
+                    </div>
+                <div id="collapse{{this.cartNumber}}" class="collapse" aria-labelledby="heading{{this.cartNumber}}" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="list-group" style="text-align: center">
+                                    {{# each this.items}}
+                                        <li class="list-group-item">
+                                            <div>
+                                                <img style="width: 200px;height: auto;margin-bottom: 40px;margin-left: 38px;" src="data:image/jpeg;base64,{{this.image}}">
+                                                <h6>{{this.item}}</h6>
+                                                <br>
+                                                <div class="my-0">Size: {{this.size}}</div>
+                                                <h8 class="my-0">Quantity: {{this.qty}}</h8>
+                                                <h8 class="my-0" style="margin-left: 150px"><strong>€{{this.price}}</strong></h8>
+                                            </div>
+                                        </li> 
+                                        {{/each}}
+                                        <li class="list-group-item d-flex">
+                                            <span>Delivery: </span>
+                                            <strong style="margin-left: 172px" >€{{this.DeliveryPrice}}</strong>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span>Total: </span>
+                                            <strong style="margin-left: 182px">€{{this.finalPrice}}</strong>
+                                        </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            {{else}}
+            <h5>No current Orders</h5>
+            {{/if}}
+            </div>
+        </div>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+        <h3>Menu 2</h3>
+    </div>
+</div>
+<script src="/assets/js/user.js"></script>
+</body>
+</html>

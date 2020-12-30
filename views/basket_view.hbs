@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Your Basket</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <link href="/assets/css/basket.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="border">
+    <div id="contin"><img id="header1" src=""></div>
+    <div class="input-group mb-3">
+        <input class="py-2 border-left-0 border" id="Search" type="search" onkeyup="filterFunction()" placeholder="Find The Products Your Looking for...">
+        <div class="input-group-append">
+            <button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="dropdown" id="dissapear">
+            <div id="myDropdown" data-onshow="" class="dropdown-content">
+              <a onclick="findSpecific(this)">Bags</a>
+              <a onclick="findSpecific(this)">Tops</a>
+              <a onclick="findSpecific(this)">Hoodies</a>
+              <a onclick="findSpecific(this)">Jeans</a>
+              <a onclick="findSpecific(this)">T-shirts</a>
+              <a onclick="findSpecific(this)">Shoes</a>
+              <a onclick="findSpecific(this)">Coats</a>
+              <a onclick="findSpecific(this)">Skirts</a>
+              <a onclick="findSpecific(this)">Tailored Belted Coat</a>
+              <a onclick="findSpecific(this)">Longline Zip UP Hoodie in black</a>
+              <a onclick="findSpecific(this)">High Waisted Denim Mom Jeans</a>
+              <a onclick="findSpecific(this)">Boat shoes in Black suede with white soles</a>
+              <a onclick="findSpecific(this)">Vintage High Waisted Culotte Skirt Floral</a>
+              <a onclick="findSpecific(this)">Elongated 90s Shoulder Bag in Renaissance Print</a>
+              <a onclick="findSpecific(this)">Athleisure Tee Curved logo t-shirt in navy</a>
+              <a onclick="findSpecific(this)">Reclaimed Vintage inspired unisex relaxed fit jeans in black</a>
+              <a onclick="findSpecific(this)">Spray on jeans with power stretch in light wash blue</a>
+              <a onclick="findSpecific(this)">Bershka super skinny acid wash jeans in blue</a>
+              <a onclick="findSpecific(this)">Le Breve lounge printed long sleeve t-shirt in black</a>
+              <a onclick="findSpecific(this)">Daisy Street relaxed t-shirt with sport print</a>
+              <a onclick="findSpecific(this)">Champion crew neck t-shirt in off white</a>
+              <a onclick="findSpecific(this)">QED London formal coat in grey</a>
+              <a onclick="findSpecific(this)">Tom Tailor wool coat in beige check</a>
+              <a onclick="findSpecific(this)">Forever New hooded faux fur coat in oatmeal</a>
+              <a onclick="findSpecific(this)">New Look rib roll neck top in camel</a>
+              <a onclick="findSpecific(this)">Slim fit long sleeve top with lettuce edge in black</a>
+              <a onclick="findSpecific(this)">Monki Samina ribbed long sleeve top in cream</a>
+              <a onclick="findSpecific(this)">Hollister henley long sleeve top in white</a>
+              <a onclick="findSpecific(this)">Truffle Collection Stiletto Heeled shoe with chunky chain detail</a>
+              <a onclick="findSpecific(this)">Lace up shoes in black patent faux leather</a>
+              <a onclick="findSpecific(this)">Steady block heel mid shoes in black</a>
+              <a onclick="findSpecific(this)">Who What Wear Balia cross body bag with chain strap in black</a>
+              <a onclick="findSpecific(this)">Revolution X Friends Cosmetic Bag</a>
+              <a onclick="findSpecific(this)">Nike Training sports bag in black</a>
+              <a onclick="findSpecific(this)">Pleat leather look mini skirt in black</a>
+              <a onclick="findSpecific(this)">Mini skirt with ruched detail in mustard and black print</a>
+              <a onclick="findSpecific(this)">Jersey pencil midi skirt in black</a>
+              <a onclick="findSpecific(this)">Adidas Originals essentials hoodie in white</a>
+              <a onclick="findSpecific(this)">New Look hoodie with NY print in boucle</a>
+              <a onclick="findSpecific(this)">NBA Chicago Bulls Gametime hoodie in reverse french terry</a>
+            </div>
+          </div>
+    </div>
+    <button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></button>
+    <button id="logout" class="btn btn-primary">Log out</button>
+    <button id="contactus" class="btn btn-primary">Contact Us</button>
+    <button id="checkout" class="btn btn-primary"><i class="fa fa-shopping-basket" style="font-size:24px;color:white"></i></button>
+    <button id="settings" class="btn btn-primary"><i class="fa fa-cog" style="font-size: 24px;color: white"></i></button>
+  </div>
+    {{# if products}}
+    <div id="bask" class='cart'>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="list-group">
+                    <div class="list-group-item border">
+                            <h3>My Basket</h3>
+                            <hr>
+                            {{# each products }}
+                            <span class="remove" onclick="clickRemove('{{this.id}}','{{this.qty}}')"><i class="fa fa-times fa-2x"></i></span>
+                            <div id="smaller">
+                                <img class="images" src="data:image/jpeg;base64,{{this.image}}">
+                            </div>
+                            <div id="name">{{ this.item }}</div>
+                            <div id="size"><strong>Size:</strong>{{ this.size }}</div>
+                            <span id="price" class="badge price-cart" style="color:red;font:bold;font-size: 20px;"><strong>€{{ this.price }}</strong></span>
+                            <span id="quantity" class="total"><strong>Quantity:</strong>{{ this.qty }}</span>
+                            <hr><br><br>
+                            {{/each}}
+                        </div>
+                </div>
+        </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div id="subtotal1" class="col-md-8">
+                    <strong>SUB-TOTAL: € {{ totalPrice }}</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="checking" class="row">
+            <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="list-group">
+                        <div class="list-group-item border">
+                            <h4>TOTAL</h4>
+                            <hr>
+                            <strong>SUB-TOTAL:</strong> € {{ totalPrice }}<br>
+                            <div id="fee"><strong>Delivery Fee:</strong>€4</div>
+                            <hr>
+                            <a id="checkout_btn"class="btn btn-raised  btn-success">Checkout</a><br>
+                            <strong>WE ACCEPT:</strong>
+                            <img id="smaller2" src="https://assets.asosservices.com/asos-finance/images/marketing/single.png">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    {{else}}
+        <div id="checking2" class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 main">
+                <h3>There are no Items in your Basket</h3>
+                <p>To Add Items, use the searchbar to search for the clothes you want</p>
+            </div>
+        </div>
+    {{/if}}
+
+    <div class="modal fade" id="errorAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh No!</strong> Username and password are Fraudulent!
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/js/basket.js"></script>
+</body>
+</html>

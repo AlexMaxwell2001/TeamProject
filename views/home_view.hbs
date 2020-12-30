@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Homepage-Jumble</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/home.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+		<div id="border">
+			<div id="contin"><img id="header1" src=""></div>
+			<div class="input-group mb-3">
+          <input class="py-2 border-left-0 border" id="Search" type="search" onkeyup="filterFunction()" placeholder="Find The Products Your Looking for...">
+		      <div class="input-group-append">
+		        <button class="input-group-text" id="databaseSearch" for="inputGroupSelect01"><i class="fa fa-search"></i></button> 
+		      </div>
+          <div class="dropdown" id="dissapear">
+            <div id="myDropdown" data-onshow="" class="dropdown-content">
+              <a onclick="findSpecific(this)">Bags</a>
+              <a onclick="findSpecific(this)">Tops</a>
+              <a onclick="findSpecific(this)">Hoodies</a>
+              <a onclick="findSpecific(this)">Jeans</a>
+              <a onclick="findSpecific(this)">T-shirts</a>
+              <a onclick="findSpecific(this)">Shoes</a>
+              <a onclick="findSpecific(this)">Coats</a>
+              <a onclick="findSpecific(this)">Skirts</a>
+              <a onclick="findSpecific(this)">Tailored Belted Coat</a>
+              <a onclick="findSpecific(this)">Longline Zip UP Hoodie in black</a>
+              <a onclick="findSpecific(this)">High Waisted Denim Mom Jeans</a>
+              <a onclick="findSpecific(this)">Boat shoes in Black suede with white soles</a>
+              <a onclick="findSpecific(this)">Vintage High Waisted Culotte Skirt Floral</a>
+              <a onclick="findSpecific(this)">Elongated 90s Shoulder Bag in Renaissance Print</a>
+              <a onclick="findSpecific(this)">Athleisure Tee Curved logo t-shirt in navy</a>
+              <a onclick="findSpecific(this)">Reclaimed Vintage inspired unisex relaxed fit jeans in black</a>
+              <a onclick="findSpecific(this)">Spray on jeans with power stretch in light wash blue</a>
+              <a onclick="findSpecific(this)">Bershka super skinny acid wash jeans in blue</a>
+              <a onclick="findSpecific(this)">Le Breve lounge printed long sleeve t-shirt in black</a>
+              <a onclick="findSpecific(this)">Daisy Street relaxed t-shirt with sport print</a>
+              <a onclick="findSpecific(this)">Champion crew neck t-shirt in off white</a>
+              <a onclick="findSpecific(this)">QED London formal coat in grey</a>
+              <a onclick="findSpecific(this)">Tom Tailor wool coat in beige check</a>
+              <a onclick="findSpecific(this)">Forever New hooded faux fur coat in oatmeal</a>
+              <a onclick="findSpecific(this)">New Look rib roll neck top in camel</a>
+              <a onclick="findSpecific(this)">Slim fit long sleeve top with lettuce edge in black</a>
+              <a onclick="findSpecific(this)">Monki Samina ribbed long sleeve top in cream</a>
+              <a onclick="findSpecific(this)">Hollister henley long sleeve top in white</a>
+              <a onclick="findSpecific(this)">Truffle Collection Stiletto Heeled shoe with chunky chain detail</a>
+              <a onclick="findSpecific(this)">Lace up shoes in black patent faux leather</a>
+              <a onclick="findSpecific(this)">Steady block heel mid shoes in black</a>
+              <a onclick="findSpecific(this)">Who What Wear Balia cross body bag with chain strap in black</a>
+              <a onclick="findSpecific(this)">Revolution X Friends Cosmetic Bag</a>
+              <a onclick="findSpecific(this)">Nike Training sports bag in black</a>
+              <a onclick="findSpecific(this)">Pleat leather look mini skirt in black</a>
+              <a onclick="findSpecific(this)">Mini skirt with ruched detail in mustard and black print</a>
+              <a onclick="findSpecific(this)">Jersey pencil midi skirt in black</a>
+              <a onclick="findSpecific(this)">Adidas Originals essentials hoodie in white</a>
+              <a onclick="findSpecific(this)">New Look hoodie with NY print in boucle</a>
+              <a onclick="findSpecific(this)">NBA Chicago Bulls Gametime hoodie in reverse french terry</a>
+            </div>
+        </div>
+    </div>
+      		<button id="login" class="btn btn-primary"><i class="fa fa-user-circle" style="font-size:24px;color:white"></i></button>
+      		<button id="logout" class="btn btn-primary">Log out</button>
+          <button id="contactus" class="btn btn-primary">Contact Us</button>
+          <button id="checkout" class="btn btn-primary"><i class="fa fa-shopping-basket" style="font-size:24px;color:white"></i></button>
+          <button id="settings" class="btn btn-primary"><i class="fa fa-cog" style="font-size: 24px;color: white"></i></button>
+		</div>	
+		<div class="modal fade" id="errorAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh No!</strong> Username and password are Fraudulent!
+            </div>
+        </div>
+    	</div>
+
+      <div class="banner">
+     </div>
+
+     <div class="navBar">
+     <ul>
+       <li class="nav" id="all">ALL CLOTHING</li>
+       <li class="nav" id="tops">TOPS</li>
+       <li class="nav" id="hoodies">HOODIES</li>
+      <li class="nav" id="coats">COATS</li>
+       <li class="nav" id="jeans">JEANS</li>
+       <li class="nav" id="skirts">SKIRTS</li>
+       <li class="nav" id="shoes">SHOES</li>
+       <li class="nav" id="bags">BAGS</li>
+       <li class="nav" id="tshirts">T-SHIRTS</li>
+     </ul>
+     </div>
+
+   <div id="buttonCon">
+      <h1>Want to Donate?</h1>
+      <p>Check out JUMBLE's list of associated charities all over Ireland.</p>
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('LetA')"> A</button>
+      <button class="btn" onclick="filterSelection('LetB')"> B</button>
+      <button class="btn" onclick="filterSelection('LetC')"> C</button>  
+      <button class="btn" onclick="filterSelection('LetD')"> D</button>
+      <button class="btn" onclick="filterSelection('LetE')"> E</button>
+       <button class="btn" onclick="filterSelection('LetF')"> F</button>
+       <button class="btn" onclick="filterSelection('LetG')"> G</button>
+       <button class="btn" onclick="filterSelection('LetH')"> H</button>
+       <button class="btn" onclick="filterSelection('LetI')"> I</button>
+       <button class="btn" onclick="filterSelection('LetJ')"> J</button>
+       <button class="btn" onclick="filterSelection('LetK')"> K</button>
+       <button class="btn" onclick="filterSelection('LetL')"> L</button>
+       <button class="btn" onclick="filterSelection('LetM')"> M</button>
+       <button class="btn" onclick="filterSelection('LetN')"> N</button>
+       <button class="btn" onclick="filterSelection('LetO')"> O</button>
+       <button class="btn" onclick="filterSelection('LetP')"> P</button>
+       <button class="btn" onclick="filterSelection('LetQ')"> Q</button>
+       <button class="btn" onclick="filterSelection('LetR')"> R</button>
+       <button class="btn" onclick="filterSelection('LetS')"> S</button>
+       <button class="btn" onclick="filterSelection('LetT')"> T</button>
+       <button class="btn" onclick="filterSelection('LetU')"> U</button>
+       <button class="btn" onclick="filterSelection('LetV')"> V</button>
+       <button class="btn" onclick="filterSelection('LetW')"> W</button>
+       <button class="btn" onclick="filterSelection('LetX')"> X</button>
+       <button class="btn" onclick="filterSelection('LetY')"> Y</button>
+       <button class="btn" onclick="filterSelection('LetZ')"> Z</button>
+   </div>
+
+   <div class="charityCon">
+    <a href="https://www.aware.ie/donate/" target="_blank"\><img id="logo" src="http://www.medpartnership.com/wp-content/uploads/2017/04/4.-Aware-Logo.png" class="fDiv LetA"/></a>
+    <a href="https://www.barnardos.ie/how-you-can-help/fundraising/donate/make-a-donation" target="_blank"\><img id="logo" src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0012/2570/brand.gif?itok=l-vPmw9E" class="fDiv LetB"/></a>
+    <a href="https://www.downsyndromecentre.ie/get-involved/donate/" target="_blank"\><img id="logo" src="https://mm.aiircdn.com/157/5c90c13d72ca8.png" class="fDiv LetD"/></a>
+    <a href="https://www.enableireland.ie/donate" target="_blank"\><img id="logo" src="https://www.enableireland.ie/sites/all/themes/enableie/images/ei-logo-182-166-2016.png" class="fDiv LetE"/></a>
+    <a href="https://www.epilepsy.ie/content/make-donation" target="_blank"\><img id="logo" src="https://skydive.ie/wp-content/uploads/2018/05/Epilepsy-Ireland-logo.gif" class="fDiv LetE"/></a>
+    <a href="https://www.focusireland.ie/donate/" target="_blank"\><img id="logo" src="https://www.focusireland.ie/wp-content/uploads/2018/05/xfocus-ireland-logo.jpg.pagespeed.ic.byCZJ6NDEd.webp" class="fDiv LetF"/></a>
+    <a href="https://www.bluecross.ie/ways-to-help/donate/" target="_blank"\><img id="logo" src="https://www.idonate.ie/logos/irish-blue-cross-1.jpg" class="fDiv LetI"/></a>
+    <a href="https://www.cancer.ie/ways-to-help/donate/donate" target="_blank"\><img id="logo" src="https://stylefish.ie/wp-content/uploads/2014/07/Irish-Cancer-Society.png" class="fDiv LetI"/></a>
+    <a href="https://irishheart.ie/ways-to-give/" target="_blank"\><img id="logo" src="https://irishjobs-web-prd.s3.eu-west-1.amazonaws.com/assets/employer-logos/5445.gif?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3UBW7IFPIFTBQVKM/20201215/eu-west-1/s3/aws4_request&X-Amz-Date=20201215T191927Z&X-Amz-SignedHeaders=host&X-Amz-Signature=a5e46c9a80d64c64cea9f7eb49ee4ab9a7c3ab96205732048704a2610565cb55" class="fDiv LetI"/></a>
+    <a href="https://www.iwa.ie/stuck/" target="_blank"\><img id="logo" src="https://mediabilityireland.files.wordpress.com/2017/08/iwa-logo-social-media.jpg?w=300&h=300" class="fDiv LetI"/></a>
+    <a href="https://www.jackandjill.ie/how-you-can-help/donate/" target="_blank"\><img id="logo" src="https://www.iradio.ie/wp-content/uploads/2019/12/Jack-and-Jill-Childrens-Foundation-@jackandjillcf-Instagram-300x235.jpg" class="fDiv LetJ"/></a>
+    <a href="https://www.materfoundation.ie/ways-to-support/how-to-donate/" target="_blank"\><img id="logo" src="https://pbs.twimg.com/media/CUFq93nWIAAKGR7?format=jpg&name=small" class="fDiv LetM"/></a>
+    <a href="https://www.oxfamireland.org/donate" target="_blank"\><img id="logo" src="https://nijobs-web-prd.s3.eu-west-1.amazonaws.com/assets/employer-logos/4915.gif?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJXHBVNGVQQRXNOEA/20201215/eu-west-1/s3/aws4_request&X-Amz-Date=20201215T191710Z&X-Amz-SignedHeaders=host&X-Amz-Signature=87bae8a05a599e777d7991f9c8ff3a96e79c2eee8ca46a68f4a3bb0a71f018f2" class="fDiv LetO"/></a>
+    <a href="https://www.templestreet.ie/donate/" target="_blank"\><img id="logo" src="https://www.idonate.ie/logos/1549013376.png" class="fDiv LetT"/></a>
+    <a href="https://www.svp.ie/get-involved/donate.aspx" target="_blank"\><img id="logo" src="https://parishofloughgilly.com/wp-content/uploads/2019/01/SVP.jpg" class="fDiv LetS"/></a>
+ 
+   </div>
+     <div id="smaller">
+          <svg viewBox="-40 0 150 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g fill="grey"
+               transform="rotate(-10 50 100)
+                          translate(-36 45.5)
+                          skewX(40)
+                          scale(1 0.5)">
+              <path id="heart" d="M 10,30 A 20,20 0,0,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" />
+            </g>
+            <use xlink:href="#heart" fill="none" stroke="red"/>
+          </svg>
+    </div>
+  <h2 id="thankyou">Thank You for Your Kindness!</h2><br><br>
+<script src="/assets/js/home.js"></script>
+</body>
+</html>

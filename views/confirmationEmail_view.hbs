@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .myTable { background-color:#eee;border-collapse:collapse; margin-left: auto; margin-right: auto}
+        .myTable th { background-color:#20639b;color:white;width:50%; }
+        .myTable td, .myTable th { padding:5px;border:1px solid #000; }
+        .myTable td{text-align: center;}
+    </style>
+</head>
+<body>
+    <div id="here">
+        <h2 style="text-align: center">Thank you for your Order!</h2>
+        <h3 style="text-align: center"> Order #{{cartNumber}}</h3>
+        <h3 style="margin-left: 120px; ">Order Details:</h3>
+        <br/> 
+        <table style="text-align: center; table-layout: fixed; width:80%" class="myTable">
+            <tr>
+                <th>Item Details</th>
+                <th>Size</th>
+                <th>Qty</th>
+                <th>Price</th>
+            </tr>
+            {{# each products}}
+                <tr>
+                    <td>{{this.item}}</td>
+                    <td>{{this.size}}</td>
+                    <td>{{this.qty}}</td>
+                    <td>€{{this.price}}</td>
+                </tr>
+            {{/each}}
+            <tr>
+                <td colspan="3">Delivery</td>
+                <td>€{{DeliveryPrice}}</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total Price (incl Delivery)</td>
+                <td>€{{finalPrice}}</td>
+            </tr>
+        </table>
+    <br/><br/><br/>
+         <h2 style="text-align: center" id="thankyou">Thank You for Your Kindness!</h2><br><br>
+    </div>
+</body>
+</html>
