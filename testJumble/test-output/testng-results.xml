@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17530" started-at="2020-11-18T11:24:44Z" finished-at="2020-11-18T11:25:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17530" started-at="2020-11-18T11:24:44Z" finished-at="2020-11-18T11:25:01Z">
+      <class name="testJumble.loginTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="setUpBeforeClass" is-config="true" duration-ms="5068" started-at="2020-11-18T11:24:44Z" finished-at="2020-11-18T11:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="setUp" is-config="true" duration-ms="4710" started-at="2020-11-18T11:24:49Z" finished-at="2020-11-18T11:24:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="invalidDataTests" duration-ms="815" started-at="2020-11-18T11:24:54Z" description="Testing the application with INVALID input data" data-provider="invalidData" finished-at="2020-11-18T11:24:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mfwkmfw]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iemfqieo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidDataTests -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="takeScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2020-11-18T11:24:54Z" finished-at="2020-11-18T11:24:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidDataTests status=SUCCESS method=loginTest.invalidDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="setUp" is-config="true" duration-ms="135" started-at="2020-11-18T11:24:54Z" finished-at="2020-11-18T11:24:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="invalidDataTests" duration-ms="755" started-at="2020-11-18T11:24:55Z" description="Testing the application with INVALID input data" data-provider="invalidData" finished-at="2020-11-18T11:24:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Imposter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hacker]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidDataTests -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2020-11-18T11:24:55Z" finished-at="2020-11-18T11:24:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidDataTests status=SUCCESS method=loginTest.invalidDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="setUp" is-config="true" duration-ms="109" started-at="2020-11-18T11:24:55Z" finished-at="2020-11-18T11:24:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="invalidDataTests" duration-ms="789" started-at="2020-11-18T11:24:55Z" description="Testing the application with INVALID input data" data-provider="invalidData" finished-at="2020-11-18T11:24:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Select * from table]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[where numOfGoals > 5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidDataTests -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2020-11-18T11:24:56Z" finished-at="2020-11-18T11:24:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidDataTests status=SUCCESS method=loginTest.invalidDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="setUp" is-config="true" duration-ms="142" started-at="2020-11-18T11:24:56Z" finished-at="2020-11-18T11:24:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="invalidDataTests" duration-ms="727" started-at="2020-11-18T11:24:56Z" description="Testing the application with INVALID input data" data-provider="invalidData" finished-at="2020-11-18T11:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Security]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidDataTests -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2020-11-18T11:24:57Z" finished-at="2020-11-18T11:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidDataTests status=SUCCESS method=loginTest.invalidDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="setUp" is-config="true" duration-ms="141" started-at="2020-11-18T11:24:57Z" finished-at="2020-11-18T11:24:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="validDataTests" duration-ms="754" started-at="2020-11-18T11:24:57Z" description="Testing the application with VALID input data" data-provider="validData" finished-at="2020-11-18T11:24:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alextest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ewfwe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validDataTests -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2020-11-18T11:24:58Z" finished-at="2020-11-18T11:24:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validDataTests status=SUCCESS method=loginTest.validDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="setUp" is-config="true" duration-ms="104" started-at="2020-11-18T11:24:58Z" finished-at="2020-11-18T11:24:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="validDataTests" duration-ms="752" started-at="2020-11-18T11:24:58Z" description="Testing the application with VALID input data" data-provider="validData" finished-at="2020-11-18T11:24:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Deerdra1111]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thedoor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validDataTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="setUp" is-config="true" duration-ms="128" started-at="2020-11-18T11:24:59Z" finished-at="2020-11-18T11:24:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2020-11-18T11:24:59Z" finished-at="2020-11-18T11:24:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validDataTests status=SUCCESS method=loginTest.validDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="validDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="validDataTests" duration-ms="781" started-at="2020-11-18T11:24:59Z" description="Testing the application with VALID input data" data-provider="validData" finished-at="2020-11-18T11:25:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SeanTheMan!!]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VHVyaW5nTWFjaGluZUJ5U3RldmVKb2Jz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validDataTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="setUp" is-config="true" duration-ms="128" started-at="2020-11-18T11:25:00Z" finished-at="2020-11-18T11:25:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2020-11-18T11:25:00Z" finished-at="2020-11-18T11:25:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validDataTests status=SUCCESS method=loginTest.validDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="validDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="validDataTests" duration-ms="769" started-at="2020-11-18T11:25:00Z" description="Testing the application with VALID input data" data-provider="validData" finished-at="2020-11-18T11:25:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[theProfessor02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dGhlQm9tQjMwNA==]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validDataTests -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:testJumble.loginTest@6767c1fc]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2020-11-18T11:25:01Z" finished-at="2020-11-18T11:25:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validDataTests status=SUCCESS method=loginTest.validDataTests(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testJumble.loginTest@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:testJumble.loginTest@6767c1fc]" name="tearDownAfterClass" is-config="true" duration-ms="684" started-at="2020-11-18T11:25:01Z" finished-at="2020-11-18T11:25:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterClass -->
+      </class> <!-- testJumble.loginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

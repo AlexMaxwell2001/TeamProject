@@ -1,0 +1,213 @@
+		#border
+		{
+			background-color: #20639b;
+			height: 15%;
+			width: 100%;
+			color: white;		
+		}
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			background: rgb(32,99,155);
+            background: linear-gradient(0deg, rgba(32,99,155,1) 0%, rgba(255,243,208,1) 100%);
+			height: 100%;
+			margin: 0;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		#login:hover{
+			border-color: white;
+		}
+		#contactus:hover{
+			border-color: white;
+		}
+		#Join:hover{
+			background-color: #aaa;
+			border-color: #aaa;
+		}
+		#header1{
+			height: auto;
+			width: 100%;		
+		    cursor: pointer;
+		}
+		#contin{
+		    position: relative;
+		    width: 220px;
+		    height: 100px;
+		    top:-6%;
+		    left:90px;
+		}
+		#Search{
+			width: 400px;
+			top:-65px;
+            left:550px;
+            height: 42px;
+            position: relative;
+			text-align: center;
+		}
+		#databaseSearch{
+			top:-65px;
+			left:550px;
+			position: relative;
+			width: 46px;
+			height: 42px;
+			background-color: white;
+			border-color: white;
+		}
+		#border2{
+		  top:20%;
+	      height:180%;
+		  width: 50%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  position: relative;
+		  border-radius: 25px;
+	      background-color: #ffffffbe;
+	      color: black;
+	      border-color: grey;
+		  visibility: visible;
+	
+		}
+		#border3{
+			width:210;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top:2em;
+			margin-bottom: -4em;
+		}
+    	.form-group{
+    		top: 100px;
+    		width:80%;
+    		margin-left: 5em;
+			position: relative;
+			
+    	}
+    	.labels{
+    		top: 100px;
+    		left: 80px;
+    		position: relative;
+    		font-weight: bold;
+    	}
+    	#exampleModalLabel{
+    		position: absolute;
+    		font-size: 40px;
+			color: white;    	
+		}
+    	#Join{
+    		color: white;
+      		position: relative;
+      		width: 80%;
+      		height: 60px;
+			margin-top:10em;
+			margin-left: 5em;
+			  
+    	}
+		#messageInput{
+			height: 200px;
+			text-align: start;
+			padding-bottom: 165px;
+			overflow: auto;
+		}
+		.form-control::placeholder{
+			color: #20639b;
+		}
+	
+		#login{
+      		top:33px;
+      		left:1080px;
+			position: absolute;
+			background-color:#20639b;
+			border-color: #20639b;
+		}
+		#checkout{
+			top:33px;
+      		left:1330px;
+      		position: absolute;
+			background-color:#20639b;
+			border-color: #20639b; 
+			visibility: hidden;
+		}
+		#settings{
+			top:33px;
+      		left:1430px;
+      		position: absolute;
+			background-color:#20639b;
+			border-color: #20639b; 
+			visibility: hidden;
+		}
+		#settings:hover{
+			border-color: white;
+		}
+		#logout{
+			top:33px;
+      		left:1080px;
+      		position: absolute;
+			background-color:#20639b;
+			border-color: #20639b; 
+			visibility: hidden;
+		}
+		#contactus{
+			top:33px;
+      		left:1190px;
+			position: absolute;
+			background-color:#20639b;
+			border-color: #20639b;
+		}
+		#logout:hover{
+			border-color: white;
+		}
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		  position: relative;
+		  left:7%;
+		}
+
+		#myDropdown{
+			position: relative; 
+			top: -23px;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #eee;
+		  min-width: 230px;
+		  overflow: auto;
+		  border: 1px solid #ddd;
+		  z-index: 1;
+		  width: 400px;
+		}
+
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.dropdown a:hover {
+			background-color: #2d2d2d;
+			color: white;
+		}
+		.show {
+			display: block;
+		  }
+		
+		  #text{
+
+			 text-align: center;
+			 margin-left:3em;
+			 padding-left: 70px;
+			 padding-top: 50px;
+			 padding-right: 150px;
+		
+			 }
+
+	    #space{
+			margin-top:2em;
+			margin-bottom: -3em;;
+		}
+		  
+	  
+
+	

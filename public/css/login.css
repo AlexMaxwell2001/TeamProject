@@ -1,0 +1,217 @@
+	  #border
+		{
+			background-color: #20639b;
+			height: 15%;
+			width: 100%;
+			color: white;		
+		}
+		body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(LOGIN.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+		}
+    image{
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+    #contactus:hover{
+      border-color: white;
+    }
+    #tester{
+      margin-top: -2em;
+      visibility: hidden;
+      color: rgba(255, 255, 255, 0.473);
+    }
+    #login{
+      top:33px;
+      left:1130px;
+      position: absolute;
+      background-color:#20639b;
+      border-color: #20639b;
+    }
+    #checkout{
+      top:33px;
+      left:1430px;
+      position: absolute;
+      background-color:#20639b;
+      border-color: #20639b; 
+      visibility: hidden;
+    }
+    #logout{
+      top:33px;
+      left:1130px;
+      position: absolute;
+      background-color:#20639b;
+      border-color: #20639b; 
+      visibility: hidden;
+    }
+    #contactus{
+      top:33px;
+      left:1260px;
+      position: absolute;
+      background-color:#20639b;
+      border-color: #20639b;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #logout:hover{
+      border-color: white;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      position: relative;
+      left:7%;
+    }
+
+    #myDropdown{
+      position: relative; 
+      top: -23px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #eee;
+      min-width: 230px;
+      overflow: auto;
+      border: 1px solid #ddd;
+      z-index: 1;
+      width: 400px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #2d2d2d;
+      color: white;
+    }
+    .show {
+      display: block;
+      }
+    #login:hover{
+      border-color: white;
+    }
+		#header1{
+			height: auto;
+      width: 100%;    
+      cursor: pointer;
+		}
+    #contin{
+        position: relative;
+        width: 220px;
+        height: 100px;
+        top:-6%;
+        left:90px;
+    }
+		#Search{
+			width: 400px;
+      top:-65px;
+      left:550px;
+      height: 42px;
+      position: relative;
+			text-align: center;
+		}
+		#databaseSearch{
+			top:-65px;
+			left:550px;
+			position: relative;
+			width: 46px;
+			height: 42px;
+			background-color: white;
+			border-color: white;
+		}
+    #resetLink{
+      color: blue;
+      cursor: pointer;
+      position: relative;
+      top:145px;
+      left:285px;
+      visibility: hidden;
+    }
+    #Registration{
+      color: blue;
+      cursor: pointer;
+      left:150px;
+      top:-24px;
+      position: relative;
+    }
+    #label1{
+      position: relative;
+      top:50px;
+      left:60px;
+    }
+    #label2{
+      position: relative;
+      top:90px;
+      left:60px;
+    }
+    #label3{
+      position: relative;
+      top: 130px;
+      left: 60px;
+      visibility: hidden;
+    }
+    #username{
+      position: relative;
+      width: 350px;
+      top:97px;
+      left: 60px;
+    }
+    #password{  
+      position: relative;
+      width: 350px;
+      left:60px;
+      top: 130px;
+      visibility: hidden;
+    }
+    #label4{
+      font-family: Akzidenz;
+      position: relative;
+      left:205px;
+      top:75px;
+    }
+    #signin{
+      position: relative;
+      left:60px;
+      top: 165px;
+      width:100px;
+      color: rgb(137, 152, 155);
+      background-color: rgb(231, 238, 236);
+      border-color: rgb(231, 238, 236);
+      visibility: hidden;
+    }
+    #continue{
+      position: relative;
+      left:-45px;
+      top: 20px;
+      width:100px;
+      color: rgb(137, 152, 155);
+      background-color: rgb(231, 238, 236);
+      border-color: rgb(231, 238, 236);
+    }
+    #border2{
+      top:15%;
+      height:85%;
+      width: 30%;
+      background-color: rgba(255, 255, 255, 0.473);
+    }
+    #warning1{
+      color: red;
+      position: relative;
+      top:-73px;
+      left:84px;
+      visibility: hidden;
+    }
+    #warning2{
+      color: red;
+      position: relative;
+      top:-5px;
+      left:25px;
+      visibility: hidden;
+    }

@@ -1,0 +1,197 @@
+#border
+{
+    background-color: #20639b;
+    height: 15%;
+    width: 100%;
+    color: white;
+}
+#name{
+    word-break: break-all;
+    width: 290px;
+    padding-right: 10px;
+}
+#size{
+    word-break: break-all;
+    width: 290px;
+    padding-right: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(32,99,155);
+    background: linear-gradient(0deg, rgba(32,99,155,1) 0%, rgba(255,243,208,1) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}#warning{
+    visibility: hidden;
+}
+#contactus:hover{
+    border-color: white;
+}#pad{
+    padding-left: 15px;
+}
+#login:hover{
+    border-color: white;
+}
+#checkout:hover{
+    border-color: white;
+}
+#login{
+            top:33px;
+            left:1080px;
+            position: absolute;
+            background-color:#20639b;
+            border-color: #20639b;
+        }
+        #checkout{
+            top:33px;
+            left:1330px;
+            position: absolute;
+            background-color:#20639b;
+            border-color: #20639b; 
+            visibility: hidden;
+        }
+        #settings{
+            top:33px;
+            left:1430px;
+            position: absolute;
+            background-color:#20639b;
+            border-color: #20639b; 
+            visibility: hidden;
+        }
+        #settings:hover{
+            border-color: white;
+        }
+        #logout{
+            top:33px;
+            left:1080px;
+            position: absolute;
+            background-color:#20639b;
+            border-color: #20639b; 
+            visibility: hidden;
+        }
+        #contactus{
+            top:33px;
+            left:1190px;
+            position: absolute;
+            background-color:#20639b;
+            border-color: #20639b;
+        }
+        #logout:hover{
+            border-color: white;
+        }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          position: relative;
+          left:7%;
+        }
+
+        #myDropdown{
+            position: relative; 
+            top: -23px;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #eee;
+          min-width: 230px;
+          overflow: auto;
+          border: 1px solid #ddd;
+          z-index: 1;
+          width: 400px;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #2d2d2d;
+            color: white;
+        }
+        .show {
+            display: block;
+          }
+#header1{
+    height: auto;
+    width: 100%;        
+    cursor: pointer;
+}
+#contin{
+    position: relative;
+    width: 220px;
+    height: 100px;
+    top:-6%;
+    left:90px;
+}
+#Search{
+    width: 400px;
+    top:-65px;
+    left:550px;
+    height: 42px;
+    position: relative;
+    text-align: center;
+}
+#databaseSearch{
+    top:-65px;
+    left:550px;
+    position: relative;
+    width: 46px;
+    height: 42px;
+    background-color: white;
+    border-color: white;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paypal-logo {
+    font-family: Verdana, Tahoma;
+    font-weight: bold;
+    font-size: 26px;
+}
+.paypal-logo i:first-child {
+    color: #253b80;
+}
+.paypal-logo i:last-child {
+    color: #179bd7;
+}
+.paypal-button {
+    padding: 15px 30px;
+    border: 1px solid #ff9933;
+    border-radius: 5px;
+    background-image: linear-gradient(#fff0a8, #f9b421);
+    margin: 0 auto;
+    display: block;
+    min-width: 138px;
+    position: relative;
+}
+.paypal-button-title {
+    font-size: 14px;
+    color: #505050;
+    vertical-align: baseline;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+}
+.paypal-button .paypal-logo {
+    display: inline-block;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+}
+
+#invisible {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+

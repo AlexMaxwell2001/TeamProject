@@ -1,0 +1,227 @@
+		#border
+		{
+			background-color: #20639b;
+			height: 15%;
+			width: 100%;
+			color: white;		
+		}
+		#login{
+      		top:33px;
+      		left:1080px;
+			position: absolute;
+			background-color:#20639b;
+			border-color: #20639b;
+		}
+		#checkout{
+			top:33px;
+      		left:1330px;
+      		position: absolute;
+			background-color:#20639b;
+			border-color: #20639b; 
+			visibility: hidden;
+		}
+		#settings{
+			top:33px;
+      		left:1430px;
+      		position: absolute;
+			background-color:#20639b;
+			border-color: #20639b; 
+			visibility: hidden;
+		}
+		#settings:hover{
+			border-color: white;
+		}
+		#logout{
+			top:33px;
+      		left:1080px;
+      		position: absolute;
+			background-color:#20639b;
+			border-color: #20639b; 
+			visibility: hidden;
+		}
+		#contactus{
+			top:33px;
+      		left:1190px;
+			position: absolute;
+			background-color:#20639b;
+			border-color: #20639b;
+		}
+		#logout:hover{
+			border-color: white;
+		}
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		  position: relative;
+		  left:7%;
+		}
+
+		#myDropdown{
+			position: relative; 
+			top: -23px;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #eee;
+		  min-width: 230px;
+		  overflow: auto;
+		  border: 1px solid #ddd;
+		  z-index: 1;
+		  width: 400px;
+		}
+
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.dropdown a:hover {
+			background-color: #2d2d2d;
+			color: white;
+		}
+		.show {
+			display: block;
+		  }
+		 .charityCon {
+			overflow: hidden;
+			display: block;	
+			width: 75%;
+			margin-left: 240px;
+		  }
+		  .fDiv {
+			float: left;
+			color: #ffffff;
+			line-height: 100px;
+			text-align: center;
+			margin: 2px;
+			display: none; 
+		  }
+		  #logo{
+			height: 150px;
+			width: 190px;
+			border-radius: 4px;
+			padding: 5px;
+			margin-right: 10px;
+			margin-bottom: 20px;
+		}
+		#logo:hover{
+			box-shadow: 0 0 5px 1px rgba(148, 65, 10, 0.5);
+		}
+		  .btn {
+			padding: 12px 15.5px;
+			background-color: #f3efef;
+			margin-bottom: 10px;
+			cursor: pointer;
+			margin-right: 3px;
+		  }
+		  .btn:hover {
+			background-color: #ddd;
+		  }
+		  .btn.active {
+			background-color: #666;
+			color: white;
+		  }
+		  #buttonCon{
+			margin:2.5em;  
+		  }
+		.banner{
+		    background-image: url("banner2.png");
+		    height: 60%;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    position: relative;
+		}
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			background: rgb(32,99,155);
+            background: linear-gradient(0deg, rgba(32,99,155,1) 0%, rgba(255,243,208,1) 100%);
+            margin: 0;
+		}
+		#contactus:hover{
+			border-color: white;
+		}
+		#login:hover{
+			border-color: white;
+		}
+		#checkout:hover{
+    		border-color: white;
+		}
+		#header1{
+			height: auto;
+			width: 100%;		
+		    cursor: pointer;
+		}
+		#contin{
+			position: relative;
+			width: 220px;
+			height: 100px;
+			top:-6%;
+			left:90px;
+		}
+		#Search{
+			width: 400px;
+			top:-65px;
+      		left:550px;
+      		height: 42px;
+      		position: relative;
+			text-align: center;
+		}
+		#databaseSearch{
+			top:-65px;
+			left:550px;
+			position: relative;
+			width: 46px;
+			height: 42px;
+			background-color: white;
+			border-color: white;
+		}
+		#smaller{
+			width: 100px;
+			height: 100px;
+			bottom: -10%;
+			left:950px;
+			position: relative;
+		}
+		#thankyou{
+			text-align: center;
+			margin-right: 2em;
+		}
+		.navBar{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: rgb(255, 255, 255);
+			height:50px;
+
+		}
+		li {
+			float: left;
+			margin-left:3.5em;
+			font-family: Arial, Helvetica, sans-serif;
+		  }
+
+		.nav{
+			display: block;
+			color: rgb(0, 0, 0);
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			cursor: pointer;
+		  }
+
+	    .nav:hover{
+			background-color:  #20639b;
+			color: white;
+		} 
+
+		.show {
+			display: block;
+		  }
+		  
+	
